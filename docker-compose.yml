@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  contacts-pg:
+    image: bitnami/postgresql
+    container_name: projnode-pg
+    ports:
+      - 5431:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=node
